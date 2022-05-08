@@ -77,10 +77,10 @@ fn main() {
           None => {
             if name.is_empty() {
               break;
-            } else {
-              println!("{} is not on the visitor list.", name);
-              visitor_list.push(Visitor::new(&name, VisitorAction::Probation, 0));
             }
+            println!("{} is not on the visitor list.", name);
+            visitor_list.push(Visitor::new(&name, VisitorAction::Probation, 0));
+            
           }
         }
       }
